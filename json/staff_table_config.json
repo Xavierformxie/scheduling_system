@@ -1,0 +1,112 @@
+{
+    "columns":[
+        {
+            "key":"name",
+            "display":"姓名",
+            "type":"text",
+            "readonly": false,
+            "sortable": true,
+            "default":"",
+            "width_percent":10
+        },
+        {
+            "key":"Attendance",
+            "display":"出勤",
+            "type":"select",
+            "options":[
+                "N",
+                "Y"
+            ],
+            "readonly": false,
+            "sortable": true,
+            "default":"N",
+            "width_percent":5
+        },
+        {
+            "key":"fixed_area",
+            "display":"固定区域",
+            "type":"select",
+            "options":[
+                "",
+                "入境",
+                "出境"
+            ],
+            "readonly": false,
+            "sortable": true,
+            "default":"",
+            "width_percent":10
+        },
+        {
+            "key":"preferred_area",
+            "display":"擅长区域",
+            "type":"select",
+            "options":[
+                "",
+                "入境",
+                "出境"
+            ],
+            "readonly": false,
+            "sortable": true,
+            "default":"",
+            "width_percent":10
+        },
+        {
+            "key":"preferred_section",
+            "display":"擅长环节",
+            "type":"select",
+            "options":[
+                "",
+                "前台",
+                "后台"
+            ],
+            "readonly": false,
+            "sortable": true,
+            "default":"",
+            "width_percent":10
+        },
+        {
+            "key":"team_name",
+            "display":"队名",
+            "type":"select",
+            "options":[
+                "",
+                "一队",
+                "二队",
+                "三队"
+            ],
+            "readonly": false,
+            "sortable": true,
+            "default":"",
+            "width_percent":10
+        },
+        {
+            "key":"Group_leader",
+            "display":"组长",
+            "type":"text",
+            "readonly": false,
+            "sortable": true,
+            "default":"",
+            "width_percent":15
+        },
+        {
+            "key":"Group_members",
+            "display":"组员",
+            "type":"list",
+            "readonly": false,
+            "sortable": false,
+            "default":"",
+            "width_percent":30,
+            "separators":[
+                ",",
+                "、"
+            ]
+        }
+    ],
+    "scheduler_key":{
+        "front":"前台",
+        "back":"后台",
+        "inbound":"入境",
+        "outbound":"出境"
+    },
+    "default_data_path":""
+}

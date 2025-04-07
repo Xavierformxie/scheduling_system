@@ -1,0 +1,127 @@
+{
+    "uiControls":[
+        {
+            "key":"total_attendance",
+            "label":"总出勤人数",
+            "type":"number",
+            "default":8,
+            "readonly":true,
+            "row": 0,
+            "col": 0
+        },
+        {
+            "key":"Inbound_team",
+            "label":"入境队",
+            "type":"select",
+            "options":[
+                "",
+                "一队",
+                "二队",
+                "三队"
+            ],
+            "default":"一队",
+            "row": 0,
+            "col": 1
+        },
+        {
+            "key":"Outbound_team",
+            "label":"出境队",
+            "type":"select",
+            "options":[
+                "",
+                "一队",
+                "二队",
+                "三队"
+            ],
+            "default":"二队",
+            "row": 0,
+            "col": 2
+        },
+        {
+            "key":"Mobile_team",
+            "label":"机动队",
+            "type":"select",
+            "options":[
+                "",
+                "一队",
+                "二队",
+                "三队"
+            ],
+            "default":"三队",
+            "row": 0,
+            "col": 3
+        },
+        {
+            "key":"Inbound_total",
+            "label":"入境总人数",
+            "type":"number",
+            "default":4,
+            "readonly":true,
+            "row": 1,
+            "col": 0
+        },
+        {
+            "key":"Inbound_Front",
+            "label":"入境前台人数",
+            "type":"number",
+            "default":4,
+            "min": 0,
+            "max": 1000,
+            "row": 1,
+            "col": 1
+        },
+        {
+            "key":"Inbound_back",
+            "label":"入境后台人数",
+            "type":"number",
+            "default":4,
+            "min": 0,
+            "max": 1000,
+            "row": 1,
+            "col": 2
+        },
+        {
+            "key":"Outbound_total",
+            "label":"出境总人数",
+            "type":"number",
+            "default":4,
+            "readonly":true,
+            "row": 2,
+            "col": 0
+        },
+        {
+            "key":"Outbound_Front",
+            "label":"出境前台人数",
+            "type":"number",
+            "default":4,
+            "min": 0,
+            "max": 1000,
+            "row": 2,
+            "col": 1
+        },
+        {
+            "key":"Outbound_back",
+            "label":"出境后台人数",
+            "type":"number",
+            "default":4,
+            "min": 0,
+            "max": 1000,
+            "row": 2,
+            "col": 2
+        }
+    ],
+    "calculations":[
+        {
+            "target": "Inbound_total",
+            "formula": "Inbound_Front + Inbound_back"
+        },
+        {
+            "target": "Outbound_total",
+            "formula": "Outbound_Front + Outbound_back"
+        },
+        {
+            "target": "total_attendance",
+            "formula": "Inbound_total + Outbound_total"
+        }
+    ]
+}

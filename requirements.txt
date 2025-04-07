@@ -1,0 +1,7 @@
+openpyxl==3.1.5
+PyQt6==6.8.1
+PyQt6-Qt6==6.8.2 
+PyQt6_sip==13.10.0 
+QDarkstyle==3.2.3
+pandas==2.2.3
+pyinstaller
